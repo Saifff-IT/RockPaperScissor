@@ -20,7 +20,7 @@ const check = (userChoice) => {
     ) {
       result.style.backgroundColor = "green";
       result.style.color = "white";
-      result.innerText = `You win, computer chose ${compChoice}`;
+      // result.innerText = `You win, computer chose ${compChoice}`;
       yourScore.innerText++;
     } else {
       result.style.backgroundColor = "red";
