@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+body {
+  background-color: black;
+  color: white;
+}
+header {
+  height: 100px;
+  background-color: bisque;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  aspect-ratio: 1/1;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all ease 0.3s;
+}
+.box {
+  aspect-ratio: 1/1;
+  width: 210px;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.game {
+  margin: 20px auto;
+  width: 60vw;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: 30px;
+}
+.scores {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  font-size: 25px;
+  margin: 50px 0;
+}
+#your,
+#comp {
+  font-weight: bold;
+  font-size: 30px;
+}
+main {
+  text-align: center;
+}
+.result {
+  display: inline;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+.box:hover img {
+  transform: scale(0.95);
+}
+.box:active img {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 750px) {
+  .game,
+  .scores {
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .result {
+    width: 75%;
+    font-size: 15px;
+  }
+  img {
+    width: 120px;
+  }
+  .box {
+    width: 125px;
+  }
+}
